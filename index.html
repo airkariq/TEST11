@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#002c5f",
+          "text-muted": "#64748B",
+          "surface-variant": "#dee3e9",
+          "surface-container-lowest": "#ffffff",
+          "on-primary": "#ffffff",
+          "surface-dim": "#d5dbe0",
+          "primary-fixed-dim": "#abc7ff",
+          "error-container": "#ffdad6",
+          "on-tertiary": "#ffffff",
+          "tertiary": "#001d14",
+          "on-secondary-container": "#005a71",
+          "on-tertiary-fixed": "#002117",
+          "on-surface": "#161c21",
+          "primary-fixed": "#d7e3ff",
+          "outline": "#747780",
+          "surface-container-high": "#e3e9ef",
+          "on-surface-variant": "#43474f",
+          "surface-container": "#e9eef4",
+          "on-error": "#ffffff",
+          "surface-container-low": "#eff4fa",
+          "surface-bright": "#f5faff",
+          "on-tertiary-fixed-variant": "#00513d",
+          "surface-tint": "#3f5e94",
+          "on-error-container": "#93000a",
+          "outline-variant": "#c4c6d1",
+          "inverse-surface": "#2b3136",
+          "on-primary-fixed": "#001b3f",
+          "secondary-container": "#56d5ff",
+          "background": "#f5faff",
+          "border-active": "#CBD5E1",
+          "tertiary-container": "#003426",
+          "inverse-primary": "#abc7ff",
+          "tertiary-fixed": "#72facc",
+          "surface-tint-emerald": "#F0F9F6",
+          "surface": "#f5faff",
+          "inverse-on-surface": "#ecf1f7",
+          "on-secondary": "#ffffff",
+          "text-primary": "#0A111A",
+          "surface-card": "#FFFFFF",
+          "alert-attention": "#E05638",
+          "on-background": "#161c21",
+          "primary": "#001839",
+          "border-subtle": "#E2E8F0",
+          "secondary-fixed": "#b8eaff",
+          "on-secondary-fixed": "#001f28",
+          "surface-container-highest": "#dee3e9",
+          "secondary": "#006780",
+          "surface-slate-bg": "#F8FAFC",
+          "on-primary-container": "#7695ce",
+          "tertiary-fixed-dim": "#52ddb1",
+          "alert-positive": "#00875A",
+          "secondary-fixed-dim": "#56d5ff",
+          "on-secondary-fixed-variant": "#004d61",
+          "on-primary-fixed-variant": "#25467a",
+          "error": "#ba1a1a",
+          "on-tertiary-container": "#00a881",
+          "surface-tint-blue": "#F0F6FA"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-desktop": "4rem",
+          "space-2xl": "4rem",
+          "space-md": "1rem",
+          "margin-tablet": "2rem",
+          "space-sm": "0.5rem",
+          "margin": "1rem",
+          "gutter-desktop": "2rem",
+          "space-section": "6rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "label-lg": ["Hanken Grotesk"],
+          "data-tabular": ["Hanken Grotesk"],
+          "body-lg": ["Hanken Grotesk"],
+          "headline-lg-mobile": ["Hanken Grotesk"],
+          "body-sm": ["Hanken Grotesk"],
+          "headline-sm": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "display-hero": ["Hanken Grotesk"],
+          "headline-md": ["Hanken Grotesk"],
+          "title-kpi": ["Hanken Grotesk"],
+          "display-hero-mobile": ["Hanken Grotesk"],
+          "headline-lg": ["Hanken Grotesk"],
+          "label-badge": ["Hanken Grotesk"]
+        },
+        "fontSize": {
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "data-tabular": ["15px", {"lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+          "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "body-sm": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-md": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+          "display-hero": ["56px", {"lineHeight": "68px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "title-kpi": ["36px", {"lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "800"}],
+          "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+          "headline-lg": ["40px", {"lineHeight": "50px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-badge": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,44,95,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Hyundai Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAF-1YTnIz6bCb2BIt-pdaG2NJ7s8mqeP-R3WFj__HpbixFQxc7uCsB9eVfRdUl6P37rDIAQWi8NzijoqfG3vFwmvfGqnBUviV2wvwPhGawDjI7OdGiA1ItoZIYaPvgz8UwUBVLcrYW0jMxIh5tRXqgDocHD1xzc4aXckNMu71rJT580EL7CNw5os0n1_SIi_t0Szc11kkT_MmNXl499bKt2de5gprCwWGkc6GuaECj"/><div class="h-5 w-px bg-surface-variant hidden sm:block"></div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight hidden sm:inline-block">지속가능경영</span></div><nav class="hidden xl:flex items-center gap-space-xl" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-sm" data-path="vision" href="#">비전 (Vision)</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-sm" data-path="environment" href="#carbon-roadmap">환경 (Environment)</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-sm" data-path="social-csv" href="#social-csv">사회공헌 (Social &amp; CSV)</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-sm" data-path="governance" href="#governance-data">거버넌스 (Governance)</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-sm" data-path="esg-report" href="#">지속가능경영 보고서 (ESG Report)</a></nav><div class="flex items-center gap-space-md"><div class="inline-flex items-center bg-surface-container-low rounded-xl p-space-xs"><button class="px-space-sm py-1 font-label-badge text-label-badge rounded-lg bg-surface-card text-primary font-bold shadow-sm" type="button">KR</button><button class="px-space-sm py-1 font-label-badge text-label-badge text-on-surface-variant hover:text-primary transition-colors" type="button">EN</button></div><a class="hidden md:inline-flex items-center gap-space-xs bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-xl hover:bg-primary transition-colors" data-path="esg-report" href="#"><span class="material-symbols-outlined text-[18px]">download</span><span>보고서 다운로드</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- CONTROL BAR & DASHBOARD NAVIGATION HEADER -->
+<section class="w-full bg-surface-card border-b border-border-subtle py-space-md sticky top-20 z-40 shadow-sm backdrop-blur-md bg-surface-card/95">
+<div class="max-w-[1440px] mx-auto px-margin-tablet lg:px-margin-desktop flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<!-- Title & Live Status -->
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex w-2.5 h-2.5 rounded-full bg-alert-positive animate-pulse"></span>
+<span class="font-label-badge text-label-badge text-alert-positive tracking-wider uppercase font-bold">2025 Annual Verified</span>
+</div>
+<div class="h-4 w-px bg-surface-variant hidden sm:block"></div>
+<div class="flex items-baseline gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-primary font-extrabold tracking-tight">ESG &amp; 탄소중립 2045 통합 인포그래픽 대시보드</h1>
+<span class="font-body-sm text-body-sm text-text-muted hidden lg:inline">| 실시간 데이터 기준: 2025.12.31 확정치</span>
+</div>
+</div>
+<!-- Interactive Filters & Global Export -->
+<div class="flex items-center gap-space-sm w-full md:w-auto overflow-x-auto pb-1 md:pb-0">
+<div class="inline-flex items-center p-1 bg-surface-slate-bg rounded-xl border border-border-subtle shrink-0">
+<button class="dashboard-filter-btn px- space-sm py-1.5 px-3 rounded-lg font-label-lg text-label-lg transition-all bg-primary text-on-primary font-bold shadow-xs" id="filter-btn-all" onclick="filterDashboard('all')">
+            종합 ESG
+          </button>
+<button class="dashboard-filter-btn px- space-sm py-1.5 px-3 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-primary font-medium" id="filter-btn-env" onclick="filterDashboard('env')">
+            E 환경·전동화
+          </button>
+<button class="dashboard-filter-btn px- space-sm py-1.5 px-3 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-primary font-medium" id="filter-btn-soc" onclick="filterDashboard('soc')">
+            S 사회·공급망
+          </button>
+<button class="dashboard-filter-btn px- space-sm py-1.5 px-3 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-primary font-medium" id="filter-btn-gov" onclick="filterDashboard('gov')">
+            G 거버넌스·Net Positive
+          </button>
+</div>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-surface-card hover:bg-surface-tint-blue border border-border-subtle text-primary font-label-lg text-label-lg font-bold shrink-0 transition-colors shadow-xs" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+<span class="hidden sm:inline">대시보드 내보내기</span>
+</button>
+</div>
+</div>
+</section>
+<!-- MAIN DASHBOARD CONTENT WRAPPER -->
+<div class="max-w-[1440px] mx-auto w-full px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col gap-space-2xl">
+<!-- 1. TOP EXECUTIVE KPI SCORECARD (4 핵심 축 지표) -->
+<section class="w-full">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge bg-primary/10 text-primary px-2.5 py-1 rounded-full uppercase tracking-wider font-bold">Executive Highlights</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant font-medium">2025년 지속가능경영 4대 핵심 이행 지표</span>
+</div>
+<div class="flex items-center gap-1 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>DNV 제3자 제증 완료</span>
+</div>
+</div>
+<!-- 4-Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg">
+<!-- Card 1: 2025 전동화 총 판매 -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-text-muted">전동화 라인업 확대</span>
+<span class="inline-flex items-center text-alert-positive font-label-badge text-label-badge bg-surface-tint-emerald px-2 py-0.5 rounded-full font-bold">
+              ▲ +27.0% YoY
+            </span>
+</div>
+<div class="mt-space-sm mb-1">
+<span class="font-title-kpi text-title-kpi font-extrabold text-text-primary tracking-tight">961,812</span>
+<span class="text-on-surface-variant font-label-lg text-label-lg ml-1">대 판매</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-1">2030년 목표 330만 대 중 달성률</p>
+<!-- Radial & Linear Gauge Progress -->
+<div class="space-y-1.5 pt-space-xs border-t border-border-subtle">
+<div class="flex justify-between items-center font-data-tabular text-data-tabular">
+<span class="text-text-muted text-xs font-semibold">2030 목표 (330만 대)</span>
+<span class="font-bold text-primary text-xs">29.1% 진척</span>
+</div>
+<div class="w-full h-2.5 bg-surface-slate-bg rounded-full overflow-hidden p-0.5 border border-border-subtle">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary-container rounded-full transition-all duration-1000" style="width: 29.1%"></div>
+</div>
+<span class="text-[11px] text-text-muted block text-right">친환경차 판매 비중 24.2% 돌파</span>
+</div>
+</div>
+<!-- Card 2: 글로벌 품질 & 안전 리더십 -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-text-muted">글로벌 신뢰성 리더십</span>
+<span class="inline-flex items-center text-primary font-label-badge text-label-badge bg-surface-tint-blue px-2 py-0.5 rounded-full font-bold">
+              Top Tier
+            </span>
+</div>
+<div class="mt-space-sm mb-1 flex items-baseline gap-2">
+<span class="font-title-kpi text-title-kpi font-extrabold text-text-primary tracking-tight">글로벌 2위</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">미국 J.D. Power 신차품질조사(IQS)</p>
+<div class="space-y-2 pt-space-xs border-t border-border-subtle">
+<div class="flex items-center justify-between text-xs">
+<span class="text-text-muted font-medium">IIHS 최고안전등급</span>
+<span class="font-bold text-primary bg-surface-slate-bg px-2 py-0.5 rounded border border-border-subtle">16개 차종 (TSP/TSP+)</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="text-text-muted font-medium">TIME지 최고기업</span>
+<span class="font-bold text-alert-positive">글로벌 33위 (아시아 완성차 1위)</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Scope 1+2 vs 사회적 절감 순효과 -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-alert-positive"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-text-muted">온실가스 사회적 순가치</span>
+<span class="inline-flex items-center text-alert-positive font-label-badge text-label-badge bg-surface-tint-emerald px-2 py-0.5 rounded-full font-bold">
+              Net Positive
+            </span>
+</div>
+<div class="mt-space-sm mb-1">
+<span class="font-title-kpi text-title-kpi font-extrabold text-alert-positive tracking-tight">+263.52</span>
+<span class="text-alert-positive font-label-lg text-label-lg ml-1 font-bold">억 원</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">사회적 비용 절감액 &gt; 사업장 배출 비용</p>
+<div class="space-y-1.5 pt-space-xs border-t border-border-subtle">
+<div class="flex justify-between text-xs font-data-tabular">
+<span class="text-text-muted">EV 주행 절감(+)</span>
+<span class="font-bold text-alert-positive">6,954.52억 원</span>
+</div>
+<div class="flex justify-between text-xs font-data-tabular">
+<span class="text-text-muted">공장 배출 발생(-)</span>
+<span class="font-medium text-error">-6,691.00억 원</span>
+</div>
+<div class="w-full bg-surface-slate-bg h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-alert-positive h-full" style="width: 51%"></div>
+<div class="bg-error h-full" style="width: 49%"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: 글로벌 RE100 이행률 -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary-container"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-text-muted">글로벌 RE100 이행률</span>
+<span class="inline-flex items-center text-secondary font-label-badge text-label-badge bg-surface-tint-blue px-2 py-0.5 rounded-full font-bold">
+              유럽·북미·인도 100%
+            </span>
+</div>
+<div class="mt-space-sm mb-1 flex items-baseline">
+<span class="font-title-kpi text-title-kpi font-extrabold text-text-primary tracking-tight">88.0%</span>
+<span class="text-on-surface-variant font-label-lg text-label-lg ml-2 font-medium">해외 사업장 평균</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">2027년 전 해외 사업장 100% 조기달성</p>
+<div class="space-y-1.5 pt-space-xs border-t border-border-subtle">
+<div class="flex justify-between items-center text-xs">
+<span class="text-text-muted font-medium">국내 444MW 선제 PPA</span>
+<span class="font-bold text-primary font-data-tabular">연간 28만 톤 감축</span>
+</div>
+<div class="w-full h-2.5 bg-surface-slate-bg rounded-full overflow-hidden border border-border-subtle">
+<div class="h-full bg-gradient-to-r from-secondary-container to-secondary rounded-full" style="width: 88%"></div>
+</div>
+<span class="text-[11px] text-text-muted block text-right font-medium">북미 메타플랜트(HMGMA) 147MW 가동</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. [환경(E) 섹션] 전동화 믹스 & 탄소중립 2045 로드맵 & 친환경 제조 다이어그램 -->
+<section class="dashboard-section w-full flex flex-col gap-space-lg" id="section-env">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm border-b border-border-subtle pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-tint-emerald text-on-tertiary-container font-label-badge text-label-badge font-bold border border-tertiary-fixed-dim/40">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+              ENVIRONMENT PILLAR
+            </span>
+<span class="text-text-muted text-xs">| 투트랙 기후변화 대응 체계</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">전동화 라인업 믹스 &amp; 2045 탄소중립 로드맵</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted max-w-md">
+          하이브리드(HEV) 중심의 강력한 현금창출원(Cash Cow)을 바탕으로 차세대 BEV·수소(HTWO) 50.5조 원 R&amp;D를 선순환 투자합니다.
+        </p>
+</div>
+<!-- Grid: Powertrain Cash-Cow Infographic & Carbon Neutral Roadmap -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: 친환경 파워트레인 믹스 & 캐시카우 순환 도식 (5 cols) -->
+<div class="lg:col-span-5 bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">donut_large</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">2025 친환경 파워트레인 판매 믹스</h3>
+</div>
+<span class="font-data-tabular text-data-tabular font-bold text-primary">총 961,812대</span>
+</div>
+<!-- Visual Donut & Flow Breakdown -->
+<div class="my-space-lg flex flex-col sm:flex-row items-center gap-space-lg">
+<!-- SVG Donut Chart -->
+<div class="relative w-44 h-44 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 160 160">
+<!-- Background Ring -->
+<circle cx="80" cy="80" fill="transparent" r="64" stroke="#E2E8F0" stroke-width="22"></circle>
+<!-- Segment HEV: 70.6% -> circumference: 2*pi*64 = 402.12 -> 283.9 -->
+<circle class="transition-all duration-1000" cx="80" cy="80" fill="transparent" r="64" stroke="#002C5F" stroke-dasharray="283.9 402.12" stroke-dashoffset="0" stroke-width="22"></circle>
+<!-- Segment EV: 28.7% -> 115.4 -->
+<circle class="transition-all duration-1000" cx="80" cy="80" fill="transparent" r="64" stroke="#00875A" stroke-dasharray="115.4 402.12" stroke-dashoffset="-283.9" stroke-width="22"></circle>
+<!-- Segment FCEV: 0.7% -> 2.8 -->
+<circle class="transition-all duration-1000" cx="80" cy="80" fill="transparent" r="64" stroke="#56D5FF" stroke-dasharray="2.8 402.12" stroke-dashoffset="-399.3" stroke-width="22"></circle>
+</svg>
+<!-- Inner Text -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="text-[11px] font-bold text-text-muted uppercase tracking-wider">친환경 비중</span>
+<span class="font-title-kpi text-title-kpi font-extrabold text-primary leading-tight">24.2%</span>
+<span class="text-[10px] text-alert-positive font-bold">+27% YoY 증대</span>
+</div>
+</div>
+<!-- Interactive Breakdown Legend -->
+<div class="flex-1 w-full space-y-2.5">
+<!-- HEV Card -->
+<div class="p-2.5 rounded-lg bg-surface-slate-bg border border-border-subtle hover:border-primary transition-all">
+<div class="flex items-center justify-between text-xs">
+<span class="flex items-center gap-1.5 font-bold text-primary">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+                      하이브리드 (HEV/PHEV)
+                    </span>
+<span class="font-data-tabular font-bold text-primary">70.6%</span>
+</div>
+<div class="flex items-baseline justify-between mt-1 text-xs">
+<span class="text-text-muted font-medium">679,017대</span>
+<span class="text-[11px] text-primary font-bold bg-surface-tint-blue px-1.5 py-0.5 rounded">캐시카우 원천</span>
+</div>
+</div>
+<!-- EV Card -->
+<div class="p-2.5 rounded-lg bg-surface-slate-bg border border-border-subtle hover:border-alert-positive transition-all">
+<div class="flex items-center justify-between text-xs">
+<span class="flex items-center gap-1.5 font-bold text-alert-positive">
+<span class="w-3 h-3 rounded-full bg-alert-positive"></span>
+                      순수 전기차 (BEV)
+                    </span>
+<span class="font-data-tabular font-bold text-alert-positive">28.7%</span>
+</div>
+<div class="flex items-baseline justify-between mt-1 text-xs">
+<span class="text-text-muted font-medium">275,669대</span>
+<span class="text-[11px] text-alert-positive font-bold bg-surface-tint-emerald px-1.5 py-0.5 rounded">탄소감축 선봉</span>
+</div>
+</div>
+<!-- FCEV Card -->
+<div class="p-2.5 rounded-lg bg-surface-slate-bg border border-border-subtle hover:border-secondary transition-all">
+<div class="flex items-center justify-between text-xs">
+<span class="flex items-center gap-1.5 font-bold text-secondary">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+                      수소전기차 (FCEV/HTWO)
+                    </span>
+<span class="font-data-tabular font-bold text-secondary">0.7%</span>
+</div>
+<div class="flex items-baseline justify-between mt-1 text-xs">
+<span class="text-text-muted font-medium">7,126대</span>
+<span class="text-[11px] text-secondary font-bold bg-surface-tint-blue px-1.5 py-0.5 rounded">수소 생태계 선도</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Cash Cow Loop Diagram Callout -->
+<div class="p-space-md rounded-xl bg-surface-tint-blue border-l-4 border-primary">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-primary text-[18px]">currency_exchange</span>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">선순환 투자 메커니즘 (R&amp;D Flywheel)</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                HEV 67.9만 대의 안정적 수익은 시장 캐즘을 극복하는 방어책이자, 2030년까지 계획된 <strong class="text-primary font-bold">국내 투자 총 125조 원</strong> 중 <strong class="text-primary font-bold">50조 5,000억 원의 전동화·SDV·HTWO 핵심 R&amp;D</strong> 재원을 조달하는 선순환 토대입니다.
+              </p>
+</div>
+</div>
+<!-- Bottom: 2030 Target Bar -->
+<div class="mt-space-md pt-space-sm border-t border-border-subtle">
+<div class="flex justify-between items-center text-xs mb-1">
+<span class="font-semibold text-text-muted">2030 전동화 판매 330만 대 목표 (비중 60%)</span>
+<span class="font-data-tabular font-bold text-primary">현재 29.1% 진척</span>
+</div>
+<div class="w-full bg-surface-slate-bg h-2 rounded-full overflow-hidden border border-border-subtle">
+<div class="bg-primary-container h-full rounded-full" style="width: 29.1%"></div>
+</div>
+</div>
+</div>
+<!-- Right: 2045 탄소중립 로드맵 & 감축 플로우 타임라인 (7 cols) -->
+<div class="lg:col-span-7 bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm border-b border-border-subtle gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">route</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">탄소중립 2045 감축 플로우 로드맵</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge bg-surface-tint-emerald text-alert-positive px-2.5 py-1 rounded-full font-bold border border-alert-positive/20">
+                  Net-Zero 2045
+                </span>
+</div>
+</div>
+<!-- 4-Stage Stepper Flow -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 my-space-md">
+<div class="rm-step-btn text-left p-space-sm rounded-xl border-2 border-primary bg-surface-tint-blue transition-all cursor-pointer shadow-xs" id="rm-step-1" onclick="selectRoadmapStage(1)">
+<span class="font-label-badge text-label-badge text-primary font-bold block mb-0.5">STEP 01</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary block">2025</span>
+<span class="text-[11px] text-text-muted font-medium line-clamp-1">권역 100% / 해외 88%</span>
+</div>
+<div class="rm-step-btn text-left p-space-sm rounded-xl border border-border-subtle bg-surface-slate-bg hover:border-secondary transition-all cursor-pointer" id="rm-step-2" onclick="selectRoadmapStage(2)">
+<span class="font-label-badge text-label-badge text-text-muted font-bold block mb-0.5">STEP 02</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-text-primary block">2030</span>
+<span class="text-[11px] text-text-muted font-medium line-clamp-1">전동화 60% (330만 대)</span>
+</div>
+<div class="rm-step-btn text-left p-space-sm rounded-xl border border-border-subtle bg-surface-slate-bg hover:border-secondary transition-all cursor-pointer" id="rm-step-3" onclick="selectRoadmapStage(3)">
+<span class="font-label-badge text-label-badge text-text-muted font-bold block mb-0.5">STEP 03</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-text-primary block">2040</span>
+<span class="text-[11px] text-text-muted font-medium line-clamp-1">주요시장 100% ZEV</span>
+</div>
+<div class="rm-step-btn text-left p-space-sm rounded-xl border border-border-subtle bg-surface-slate-bg hover:border-secondary transition-all cursor-pointer" id="rm-step-4" onclick="selectRoadmapStage(4)">
+<span class="font-label-badge text-label-badge text-text-muted font-bold block mb-0.5">STEP 04</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-alert-positive block">2045</span>
+<span class="text-[11px] text-text-muted font-medium line-clamp-1">전 밸류체인 넷제로</span>
+</div>
+</div>
+<!-- Dynamic Detail Container for Selected Stage -->
+<div class="p-space-md rounded-xl bg-surface-slate-bg border border-border-subtle mb-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-badge text-label-badge text-primary bg-surface-card px-2.5 py-1 rounded-md border border-border-subtle font-bold" id="rm-badge">
+                  STEP 01 핵심 현황
+                </span>
+<span class="font-data-tabular text-data-tabular font-bold text-alert-positive" id="rm-stat">
+                  연간 198.6만 tCO₂-eq 감축
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary mb-2" id="rm-title">
+                2025 마일스톤: 전동화 96만 대 돌파 및 해외 RE100 88% 조기 달성
+              </h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-on-surface-variant pt-2 border-t border-border-subtle">
+<div>
+<span class="font-bold text-primary block mb-0.5">Scope 1·2 감축:</span>
+<p class="text-text-muted leading-relaxed" id="rm-scope12">국내 444MW PPA 체결 및 북미 147MW 가동으로 직접 배출 28만 톤 억제 실현.</p>
+</div>
+<div>
+<span class="font-bold text-primary block mb-0.5">Scope 3 주행 감축:</span>
+<p class="text-text-muted leading-relaxed" id="rm-scope3">아이오닉 라인업 중심 주행 단계 사회적 비용 6,954억 원 절감 회피 달성.</p>
+</div>
+<div>
+<span class="font-bold text-primary block mb-0.5">인프라 표준:</span>
+<p class="text-text-muted leading-relaxed" id="rm-infra">유럽·인도·북미 100% RE100 달성 및 ZERO 에너지 팩토리(ZEF) 설계 적용.</p>
+</div>
+</div>
+</div>
+<!-- 친환경 제조 혁신 다이어그램 (HMGMA + 국내 444MW + ZEF) -->
+<div class="space-y-2">
+<span class="font-label-lg text-label-lg font-bold text-primary block">사업장 재생에너지 &amp; 친환경 제조 혁신 성과</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs">
+<div class="p-3 bg-surface-card rounded-lg border border-border-subtle hover:border-secondary transition-colors">
+<div class="flex items-center gap-1.5 font-bold text-secondary mb-1">
+<span class="material-symbols-outlined text-[16px]">solar_power</span>
+<span>북미 HMGMA 147MW</span>
+</div>
+<p class="text-text-muted text-[11px] leading-relaxed">조지아주 메타플랜트 신공장 147MW 태양광 PPA 체결로 100% 친환경 전력 전환 가동.</p>
+</div>
+<div class="p-3 bg-surface-card rounded-lg border border-border-subtle hover:border-primary transition-colors">
+<div class="flex items-center gap-1.5 font-bold text-primary mb-1">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>국내 선제 PPA 444MW</span>
+</div>
+<p class="text-text-muted text-[11px] leading-relaxed">연간 610GWh 친환경 전력 수급 및 연 28만 톤 직접 온실가스 감축의 현실적 단계 달성.</p>
+</div>
+<div class="p-3 bg-surface-card rounded-lg border border-border-subtle hover:border-alert-positive transition-colors">
+<div class="flex items-center gap-1.5 font-bold text-alert-positive mb-1">
+<span class="material-symbols-outlined text-[16px]">factory</span>
+<span>ZERO 에너지 팩토리 (ZEF)</span>
+</div>
+<p class="text-text-muted text-[11px] leading-relaxed">ECO2-OD 기반 친환경 건물 공정 설계안 표준화로 공장 기획부터 에너지 부하 최소화.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Notes -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-[11px] text-text-muted border-t border-border-subtle">
+<span>국제 온실가스 프로토콜(GHG Protocol) Scope 1, 2, 3 준수</span>
+<span>2025 지속가능경영보고서 46-52p 공시 연계</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. [사회(S) 섹션] 3대 글로벌 CSV 임팩트 & 5단계 공급망 ESG 실사 퍼널 -->
+<section class="dashboard-section w-full flex flex-col gap-space-lg" id="section-soc">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm border-b border-border-subtle pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-tint-blue text-primary font-label-badge text-label-badge font-bold border border-primary/20">
+<span class="material-symbols-outlined text-[14px]">diversity_3</span>
+              SOCIAL &amp; CSV PILLAR
+            </span>
+<span class="text-text-muted text-xs">| 공유가치창출(CSV) &amp; 책임 공급망</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">글로벌 사회공헌(CSV) 성과 &amp; 공급망 전주기 실사 관리</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted max-w-md">
+          미래 세대 보건·생태계 보전의 3대 CSV와 함께 2,086개 부품 협력사 및 핵심 광산까지 아우르는 정량적 인권 안전망을 확립했습니다.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: 3대 글로벌 CSV 이니셔티브 임팩트 인포그래픽 (6 cols) -->
+<div class="lg:col-span-6 bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-alert-positive text-[20px]">public</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">3대 글로벌 CSV 이니셔티브 임팩트</h3>
+</div>
+<span class="font-label-badge text-label-badge text-text-muted uppercase">Global Presence</span>
+</div>
+<!-- 3 Initiative Cards -->
+<div class="space-y-space-md">
+<!-- 1. 현대 호프온휠스 -->
+<div class="p-space-md rounded-xl bg-surface-slate-bg border border-border-subtle hover:border-alert-attention transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-alert-attention/10 text-alert-attention flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">현대 호프온휠스 (Hope on Wheels)</h4>
+<span class="text-xs text-text-muted">북미 전역 소아암 퇴치 및 어린이 보건 인프라</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-kpi text-title-kpi font-extrabold text-alert-attention">3.2억</span>
+<span class="font-label-lg text-label-lg font-bold text-alert-attention">달러+</span>
+<span class="block text-[10px] text-text-muted">누적 기부 지원금</span>
+</div>
+</div>
+<div class="mt-space-sm text-xs text-on-surface-variant flex items-center justify-between border-t border-border-subtle pt-2">
+<span>미국 1,000+ 병원 연구비 지원 확대</span>
+<span class="font-semibold text-primary">캐나다·멕시코 권역 확장 운영</span>
+</div>
+</div>
+<!-- 2. 아이오닉 포레스트 -->
+<div class="p-space-md rounded-xl bg-surface-slate-bg border border-border-subtle hover:border-alert-positive transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-tint-emerald text-alert-positive flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">park</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">아이오닉 포레스트 (IONIQ Forest)</h4>
+<span class="text-xs text-text-muted">생물다양성 복원 &amp; 육상 생태계 탄소흡수원</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-kpi text-title-kpi font-extrabold text-alert-positive">200만</span>
+<span class="font-label-lg text-label-lg font-bold text-alert-positive">그루</span>
+<span class="block text-[10px] text-text-muted">글로벌 13개국 식재 완료</span>
+</div>
+</div>
+<!-- Progress to 2035 Target -->
+<div class="mt-space-sm space-y-1 border-t border-border-subtle pt-2">
+<div class="flex justify-between items-center text-xs">
+<span class="text-text-muted">2035년 누적 300만 그루 목표</span>
+<span class="font-bold text-alert-positive font-data-tabular">66.7% 달성</span>
+</div>
+<div class="w-full h-2 bg-surface-card rounded-full overflow-hidden border border-border-subtle">
+<div class="h-full bg-alert-positive rounded-full" style="width: 66.7%"></div>
+</div>
+</div>
+</div>
+<!-- 3. 헬시 씨즈 -->
+<div class="p-space-md rounded-xl bg-surface-slate-bg border border-border-subtle hover:border-secondary transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-tint-blue text-secondary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">scuba_diving</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">헬시 씨즈 (Healthy Seas)</h4>
+<span class="text-xs text-text-muted">해양 폐어망 수거 및 업사이클링 자원순환</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-kpi text-title-kpi font-extrabold text-secondary">320톤</span>
+<span class="block text-[10px] text-text-muted">10개국 해양 쓰레기 인양</span>
+</div>
+</div>
+<!-- Progress to 2027 Target -->
+<div class="mt-space-sm space-y-1 border-t border-border-subtle pt-2">
+<div class="flex justify-between items-center text-xs">
+<span class="text-text-muted">2027년 누적 400톤 목표</span>
+<span class="font-bold text-secondary font-data-tabular">80.0% 달성</span>
+</div>
+<div class="w-full h-2 bg-surface-card rounded-full overflow-hidden border border-border-subtle">
+<div class="h-full bg-secondary-container rounded-full" style="width: 80.0%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Metric -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-[11px] text-text-muted border-t border-border-subtle">
+<span>UN SDGs 3(건강), 13(기후행동), 14(해양생태계), 15(육상생태계) 기여</span>
+<span class="font-bold text-primary">임직원 조직문화 점수 80.2점 (+3년 연속 상승)</span>
+</div>
+</div>
+<!-- Right: 공급망 ESG 전주기 실사 & 인권 안전망 깔때기 도식 (6 cols) -->
+<div class="lg:col-span-6 bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">filter_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">공급망 ESG 전주기 실사 &amp; 인권 안전망 파이프라인</h3>
+</div>
+<span class="font-label-badge text-label-badge bg-surface-tint-blue text-primary px-2.5 py-0.5 rounded-full font-bold">
+                100% 실사체계
+              </span>
+</div>
+<!-- 5-Tier Funnel / Step Hierarchy -->
+<div class="space-y-2.5">
+<!-- Funnel Tier 1: 100% 서면진단 -->
+<div class="relative p-space-sm rounded-xl bg-surface-tint-blue border border-primary/20 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary font-bold text-xs flex items-center justify-center shrink-0">1</div>
+<div>
+<h5 class="font-label-lg text-label-lg font-bold text-primary">1단계: 협력사 ESG 서면평가 진단</h5>
+<p class="text-[11px] text-on-surface-variant">1·2차 부품 및 비부품 전 협력사 사전 스크리닝</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">2,086</span>
+<span class="text-xs text-text-muted font-bold ml-0.5">개사 (100%)</span>
+</div>
+</div>
+<!-- Funnel Tier 2: 고위험군 현장실사 -->
+<div class="relative p-space-sm rounded-xl bg-surface-slate-bg border border-border-subtle flex items-center justify-between ml-4">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-bold text-xs flex items-center justify-center shrink-0">2</div>
+<div>
+<h5 class="font-label-lg text-label-lg font-bold text-primary">2단계: 고위험군 전문 심층 현장실사</h5>
+<p class="text-[11px] text-text-muted">환경·안전·노동인권 전문 진단팀 파견 실사</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-extrabold text-secondary">127</span>
+<span class="text-xs text-text-muted font-bold ml-0.5">개사 완료</span>
+</div>
+</div>
+<!-- Funnel Tier 3: 부적합 25개사 밀착 개선 관리 -->
+<div class="relative p-space-sm rounded-xl bg-surface-card border border-alert-attention/40 flex items-center justify-between ml-8">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-alert-attention text-on-primary font-bold text-xs flex items-center justify-center shrink-0">3</div>
+<div>
+<h5 class="font-label-lg text-label-lg font-bold text-alert-attention">3단계: 부적합사 밀착 개선관리 &amp; 입찰제한</h5>
+<p class="text-[11px] text-text-muted">개선 계획 100% 수립, 미이행 시 엄격한 입찰 배제 페널티</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-extrabold text-alert-attention">25</span>
+<span class="text-xs text-text-muted font-bold ml-0.5">개사 관리</span>
+</div>
+</div>
+<!-- Funnel Tier 4: 배터리 핵심 광산 원재료 실사 -->
+<div class="relative p-space-sm rounded-xl bg-surface-slate-bg border border-border-subtle flex items-center justify-between ml-12">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-on-surface text-surface font-bold text-xs flex items-center justify-center shrink-0">4</div>
+<div>
+<h5 class="font-label-lg text-label-lg font-bold text-primary">4단계: 배터리 핵심 광산 및 제련소 선제 실사</h5>
+<p class="text-[11px] text-text-muted">콩고(코발트·구리), 인도네시아(니켈) + 상시 강제노동 스크리닝</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-badge text-label-badge bg-surface-card px-2 py-1 rounded text-primary font-bold border border-border-subtle">
+                    광산 직실사
+                  </span>
+</div>
+</div>
+<!-- Funnel Tier 5: 글로벌 사업장 인권 실사 -->
+<div class="relative p-space-sm rounded-xl bg-surface-tint-emerald border border-alert-positive/30 flex items-center justify-between ml-16">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-alert-positive text-on-primary font-bold text-xs flex items-center justify-center shrink-0">5</div>
+<div>
+<h5 class="font-label-lg text-label-lg font-bold text-alert-positive">5단계: 글로벌 전 사업장 인권·윤리 실사</h5>
+<p class="text-[11px] text-on-surface-variant">생산/판매 법인 및 연구소 전 주기 점검 완료</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-extrabold text-alert-positive">47</span>
+<span class="text-xs text-alert-positive font-bold ml-0.5">개 전 거점</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Regulatory Compliance Bar -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-[11px] text-text-muted border-t border-border-subtle">
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[14px] text-alert-positive">check_circle</span>
+              EU 공급망 실사지침(CSDDD) 및 美 UFLPA 완전 준거
+            </span>
+<span>자발적 이직률: 3.2% (2022년 6.8% 대비 53% 개선)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. [거버넌스(G) 섹션] 온실가스 사회적 비용 Net Positive 대차대조 도식 & 거버넌스 매트릭스 -->
+<section class="dashboard-section w-full flex flex-col gap-space-lg" id="section-gov">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm border-b border-border-subtle pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-tint-blue text-primary font-label-badge text-label-badge font-bold border border-primary/20">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+              GOVERNANCE &amp; DOUBLE MATERIALITY
+            </span>
+<span class="text-text-muted text-xs">| 이중 중대성 및 순환경가치 평가</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">온실가스 사회적 비용 Net Positive 대차대조 &amp; 거버넌스 체계</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted max-w-md">
+          전동화 보급을 통한 대기 온실가스 절감 비용이 자사 사업장의 배출 비용을 넘어서는 실질적 Net Positive 임팩트를 정량 입증했습니다.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: 온실가스 사회적 비용 상쇄 대차대조 인포그래픽 (Net Positive Balance Sheet) (7 cols) -->
+<div class="lg:col-span-7 bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-alert-positive text-[20px]">balance</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">2025 온실가스 사회적 비용 대차대조표 (Double Materiality)</h3>
+</div>
+<span class="font-label-badge text-label-badge bg-surface-tint-emerald text-alert-positive px-2.5 py-1 rounded-full font-bold">
+                순 흑자 달성
+              </span>
+</div>
+<!-- Waterfall / Comparative Visual Ledger -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md my-space-md">
+<!-- Ledger 1: 회피 절감액 (+) -->
+<div class="p-space-md rounded-xl bg-surface-tint-emerald/60 border border-alert-positive/40 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="font-label-badge text-label-badge text-alert-positive uppercase tracking-wider font-bold">(+) 사회적 절감액</span>
+<span class="material-symbols-outlined text-alert-positive text-[18px]">add_circle</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">EV 주행 대기오염 회피</h4>
+<p class="text-[11px] text-text-muted mt-1 leading-relaxed">내연기관 대비 26.2만 대 승용 EV 보급을 통한 CO₂ 감축분</p>
+</div>
+<div class="mt-space-md pt-2 border-t border-alert-positive/20">
+<span class="font-headline-sm text-headline-sm font-extrabold text-alert-positive block">+6,954.52억</span>
+<span class="font-data-tabular text-[11px] text-text-muted">1,986,351 tCO₂-eq 감축</span>
+</div>
+</div>
+<!-- Ledger 2: 자체 배출 발생액 (-) -->
+<div class="p-space-md rounded-xl bg-error-container/40 border border-error/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="font-label-badge text-label-badge text-error uppercase tracking-wider font-bold">(-) 사회적 발생액</span>
+<span class="material-symbols-outlined text-error text-[18px]">remove_circle</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-primary">사업장 생산 공정 배출</h4>
+<p class="text-[11px] text-text-muted mt-1 leading-relaxed">전 세계 제조 공장 Scope 1+2 직접/간접 전력 연료 배출 비용</p>
+</div>
+<div class="mt-space-md pt-2 border-t border-error/20">
+<span class="font-headline-sm text-headline-sm font-extrabold text-error block">-6,691.00억</span>
+<span class="font-data-tabular text-[11px] text-text-muted">1,911,084 tCO₂-eq 배출</span>
+</div>
+</div>
+<!-- Ledger 3: Net Positive 순가치 (=) -->
+<div class="p-space-md rounded-xl bg-primary text-on-primary flex flex-col justify-between shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-alert-positive/20 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="font-label-badge text-label-badge text-tertiary-fixed font-bold uppercase tracking-wider">(=) Net Positive</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">workspace_premium</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-primary">순 사회적 가치 창출</h4>
+<p class="text-[11px] text-slate-300 mt-1 leading-relaxed">생산 배출 부하를 100% 완전 상쇄하고 초과 감축한 환경 순이익</p>
+</div>
+<div class="mt-space-md pt-2 border-t border-slate-700">
+<span class="font-title-kpi text-title-kpi font-extrabold text-tertiary-fixed block">+263.52억</span>
+<span class="font-data-tabular text-[11px] text-slate-300">+75,267 tCO₂-eq 흑자 상쇄</span>
+</div>
+</div>
+</div>
+<!-- Visual Bar Comparison Meter -->
+<div class="p-space-md bg-surface-slate-bg rounded-xl border border-border-subtle space-y-2">
+<div class="flex items-center justify-between text-xs">
+<span class="font-bold text-primary">온실가스 사회적 비용 회피 vs 발생 비율</span>
+<span class="font-data-tabular font-bold text-alert-positive">회피율 103.9% (상쇄 달성)</span>
+</div>
+<div class="h-3 w-full bg-surface-card rounded-full overflow-hidden flex border border-border-subtle">
+<div class="bg-alert-positive h-full transition-all duration-700" style="width: 51%"></div>
+<div class="bg-error h-full transition-all duration-700" style="width: 49%"></div>
+</div>
+<div class="flex justify-between text-[11px] text-text-muted">
+<span>사회적 절감: 6,954.52억 원 (51.0%)</span>
+<span>공장 배출 부하: 6,691.00억 원 (49.0%)</span>
+</div>
+</div>
+</div>
+<!-- Methodology Micro Footer -->
+<div class="mt-space-md pt-space-xs text-[11px] text-text-muted border-t border-border-subtle flex flex-col sm:flex-row justify-between gap-1">
+<span>산정 기준: 美 EPA 탄소의 사회적 비용(SCC, Social Cost of Carbon) 표준 단가 준용</span>
+<span class="font-semibold text-primary">이중 중대성(Double Materiality) Outward Impact 검증 완료</span>
+</div>
+</div>
+<!-- Right: 거버넌스 의사결정 체계 & 이중 중대성 2x2 매트릭스 (5 cols) -->
+<div class="lg:col-span-5 bg-surface-card rounded-xl p-space-lg border border-border-subtle shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-border-subtle mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">corporate_fare</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">지속가능경영 거버넌스 &amp; 다양성</h3>
+</div>
+<span class="font-label-badge text-label-badge bg-surface-tint-blue text-primary px-2.5 py-0.5 rounded-full font-bold">
+                이사회 중심
+              </span>
+</div>
+<!-- Two-Tier Governance Structure Diagram -->
+<div class="space-y-space-sm mb-space-md">
+<!-- Tier 1: 지속가능경영위원회 -->
+<div class="p-space-sm rounded-xl bg-surface-slate-bg border border-border-subtle">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-lg text-label-lg font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">gavel</span>
+                    지속가능경영위원회 (이사회 산하)
+                  </span>
+<span class="font-label-badge text-label-badge bg-primary text-on-primary px-2 py-0.5 rounded font-bold">최고의결기구</span>
+</div>
+<p class="text-xs text-text-muted mb-2">ESG 전략, 기후변화 목표, 안전보건, 내부거래 투명성 심의 및 승인</p>
+<div class="grid grid-cols-3 gap-1 text-center bg-surface-card p-2 rounded-lg border border-border-subtle text-xs">
+<div>
+<span class="block text-text-muted text-[10px]">총 위원</span>
+<strong class="font-bold text-primary font-data-tabular">8명</strong>
+</div>
+<div>
+<span class="block text-text-muted text-[10px]">사외이사 비율</span>
+<strong class="font-bold text-primary font-data-tabular">87.5% (7명)</strong>
+</div>
+<div>
+<span class="block text-text-muted text-[10px]">여성 이사 비율</span>
+<strong class="font-bold text-alert-positive font-data-tabular">33.3% (4명)</strong>
+</div>
+</div>
+<div class="mt-2 text-[11px] text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>선임사외이사 제도 선제 도입으로 견제·독립성 보장</span>
+</div>
+</div>
+<!-- Tier 2: C-Level 경영위원회 (MCM) -->
+<div class="p-space-sm rounded-xl bg-surface-slate-bg border border-border-subtle">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-lg text-label-lg font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">groups</span>
+                    C-Level 경영위원회 (MCM)
+                  </span>
+<span class="font-label-badge text-label-badge bg-surface-tint-blue text-secondary px-2 py-0.5 rounded font-bold">실행 총괄</span>
+</div>
+<p class="text-xs text-text-muted mb-1.5">CEO 주관 월간 정기 회의체를 통해 ESG 긴급 이슈 즉각 대응 및 안건 상정</p>
+<div class="flex items-center justify-between text-[11px] bg-surface-card p-2 rounded border border-border-subtle">
+<span class="text-text-muted font-medium">실행 주기: 월간(Monthly) 정례화</span>
+<span class="font-bold text-primary">현업 부서 즉각 피드백 연동</span>
+</div>
+</div>
+</div>
+<!-- Double Materiality 2x2 Matrix Mini Box -->
+<div class="p-space-sm rounded-xl bg-surface-tint-emerald border border-tertiary-fixed-dim/40">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-alert-positive font-bold block mb-1">
+                이중 중대성 평가 매트릭스 (GRI &amp; CSRD 완벽 대응)
+              </span>
+<div class="grid grid-cols-2 gap-2 text-xs">
+<div class="p-2 rounded bg-surface-card border border-border-subtle">
+<strong class="text-primary block font-bold mb-0.5">환경·사회적 영향</strong>
+<span class="text-text-muted text-[11px]">대기오염, 자원순환, 협력사 인권</span>
+</div>
+<div class="p-2 rounded bg-surface-card border border-border-subtle">
+<strong class="text-primary block font-bold mb-0.5">재무적 기회 &amp; 위험</strong>
+<span class="text-text-muted text-[11px]">탄소국경세, HEV 수익성, R&amp;D 투자</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Notes -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-[11px] text-text-muted border-t border-border-subtle">
+<span>KCGS 한국ESG기준원 5년 연속 A+ 획득</span>
+<span>다우존스 지속가능경영지수(DJSI World) 편입</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. SUMMARY EXECUTIVE STRATEGY CALLOUT -->
+<section class="w-full bg-surface-card rounded-2xl p-space-xl border border-border-subtle shadow-sm relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
+<div class="max-w-3xl space-y-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge bg-primary text-on-primary px-3 py-1 rounded-full font-bold uppercase tracking-wider">
+              Progress for Humanity
+            </span>
+<span class="text-xs text-text-muted font-medium">ESG 핵심 추진 가치 총괄</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">
+            탄소중립 2045는 구호가 아닌 정량 검증된 기술과 데이터의 실행입니다
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            하이브리드(HEV) 중심의 견고한 캐시카우 선순환 구조를 통해 50.5조 원 R&amp;D를 차질 없이 집행하며, 444MW 선제적 PPA와 ZEF 친환경 제조 혁신, 그리고 2,086개 협력사 전주기 실사로 도로 위와 생산 현장 모두에서 지속가능한 모빌리티 표준을 선도합니다.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm shrink-0">
+<a class="inline-flex items-center justify-center gap-2 px-space-xl py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>2025 ESG 보고서 전문 받기</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-space-xl py-3 rounded-xl bg-surface-slate-bg hover:bg-surface-tint-blue text-primary border border-border-subtle font-label-lg text-label-lg font-bold transition-all" href="#section-env">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+<span>세부 온실가스 데이터 조회</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- CLIENT JAVASCRIPT FOR DASHBOARD FILTERING & ROADMAP INTERACTION -->
+<script>
+  // Filter Tabs Handler
+  function filterDashboard(category) {
+    const sections = {
+      env: document.getElementById('section-env'),
+      soc: document.getElementById('section-soc'),
+      gov: document.getElementById('section-gov')
+    };
+
+    const buttons = {
+      all: document.getElementById('filter-btn-all'),
+      env: document.getElementById('filter-btn-env'),
+      soc: document.getElementById('filter-btn-soc'),
+      gov: document.getElementById('filter-btn-gov')
+    };
+
+    // Reset button styling
+    Object.keys(buttons).forEach(key => {
+      if (buttons[key]) {
+        if (key === category) {
+          buttons[key].className = 'dashboard-filter-btn px-space-sm py-1.5 px-3 rounded-lg font-label-lg text-label-lg transition-all bg-primary text-on-primary font-bold shadow-xs';
+        } else {
+          buttons[key].className = 'dashboard-filter-btn px-space-sm py-1.5 px-3 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-primary font-medium';
+        }
+      }
+    });
+
+    // Display/Highlight logic
+    if (category === 'all') {
+      Object.values(sections).forEach(sec => {
+        if (sec) {
+          sec.classList.remove('hidden');
+          sec.classList.remove('opacity-40');
+        }
+      });
+    } else {
+      Object.keys(sections).forEach(key => {
+        const sec = sections[key];
+        if (!sec) return;
+        if (key === category) {
+          sec.classList.remove('hidden');
+          sec.classList.remove('opacity-40');
+          sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          sec.classList.add('hidden');
+        }
+      });
+    }
+  }
+
+  // Interactive Roadmap Step Selector
+  const roadmapStagesInfo = {
+    1: {
+      badge: 'STEP 01 핵심 현황',
+      stat: '연간 198.6만 tCO₂-eq 감축',
+      title: '2025 마일스톤: 전동화 96만 대 돌파 및 해외 RE100 88% 조기 달성',
+      scope12: '국내 444MW PPA 체결 및 북미 147MW 가동으로 직접 배출 28만 톤 억제 실현.',
+      scope3: '아이오닉 라인업 중심 주행 단계 사회적 비용 6,954억 원 절감 회피 달성.',
+      infra: '유럽·인도·북미 100% RE100 달성 및 ZERO 에너지 팩토리(ZEF) 설계 적용.'
+    },
+    2: {
+      badge: 'STEP 02 중기 목표',
+      stat: '친환경차 판매 비중 60% 달성',
+      title: '2030 마일스톤: 연간 330만 대 친환경차 판매 & 글로벌 RE100 가속화',
+      scope12: '국내외 사업장 청정에너지 조달 비중 95% 이상 제고 및 직접 배출 저감 고도화.',
+      scope3: '전기차 200만 대 및 EREV 600마일 라인업 투입으로 공급망·주행 탄소 대폭 삭감.',
+      infra: 'HTWO 수소 물류 트럭망 및 초고속 이피트(E-pit) 충전 생태계 북미·유럽 확장.'
+    },
+    3: {
+      badge: 'STEP 03 전면 전환',
+      stat: '주요시장 내연기관 전면 단종',
+      title: '2040 마일스톤: 주요 글로벌 핵심 시장 100% 무공해차(ZEV) 전환',
+      scope12: '제조 공정 내 그린 수소 직접 연소 체계 구축 및 사업장 탄소배출 80% 이상 상쇄.',
+      scope3: '유럽, 미국, 한국 등 주력 선진 시장에서 순수 배터리 및 수소전기차만 100% 판매.',
+      infra: '1·2차 협력사 100% 재생에너지 전력 사용 인증 의무화 체계 완성.'
+    },
+    4: {
+      badge: 'STEP 04 궁극적 목표',
+      stat: '전 밸류체인 Net Positive 정착',
+      title: '2045 마일스톤: 넷제로(Net-Zero) 탄소중립 전면 완성',
+      scope12: '전 세계 모든 사업장 100% 무탄소 에너지원 가동 및 잔여 배출 제로화.',
+      scope3: '원자재 채굴부터 폐기·재활용 전 생애주기 Scope 3 탄소 순배출 제로 확립.',
+      infra: '자원순환 플라스틱 100% 사이클 및 청정 수소 벨류체인 지구적 완결.'
+    }
+  };
+
+  function selectRoadmapStage(step) {
+    const data = roadmapStagesInfo[step];
+    if (!data) return;
+
+    document.getElementById('rm-badge').textContent = data.badge;
+    document.getElementById('rm-stat').textContent = data.stat;
+    document.getElementById('rm-title').textContent = data.title;
+    document.getElementById('rm-scope12').textContent = data.scope12;
+    document.getElementById('rm-scope3').textContent = data.scope3;
+    document.getElementById('rm-infra').textContent = data.infra;
+
+    for (let i = 1; i <= 4; i++) {
+      const btn = document.getElementById('rm-step-' + i);
+      if (btn) {
+        if (i === step) {
+          btn.className = 'rm-step-btn text-left p-space-sm rounded-xl border-2 border-primary bg-surface-tint-blue transition-all cursor-pointer shadow-xs';
+        } else {
+          btn.className = 'rm-step-btn text-left p-space-sm rounded-xl border border-border-subtle bg-surface-slate-bg hover:border-secondary transition-all cursor-pointer';
+        }
+      }
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin-tablet lg:px-margin-desktop"><div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-space-xl pb-space-xl"><div class="max-w-xl"><div class="flex items-center gap-space-sm mb-space-md"><img alt="Hyundai Logo" class="h-6 w-auto object-contain opacity-80" src="https://lh3.googleusercontent.com/aida/ALJJyrAF-1YTnIz6bCb2BIt-pdaG2NJ7s8mqeP-R3WFj__HpbixFQxc7uCsB9eVfRdUl6P37rDIAQWi8NzijoqfG3vFwmvfGqnBUviV2wvwPhGawDjI7OdGiA1ItoZIYaPvgz8UwUBVLcrYW0jMxIh5tRXqgDocHD1xzc4aXckNMu71rJT580EL7CNw5os0n1_SIi_t0Szc11kkT_MmNXl499bKt2de5gprCwWGkc6GuaECj"/><span class="font-headline-sm text-headline-sm text-primary font-bold">현대자동차</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">서울특별시 서초구 헌릉로 12 | 대표이사 정의선, 장재훈, 이동석<br/>사업자등록번호 101-81-09147 | 통신판매업신고 2002-00154</p><p class="font-body-sm text-body-sm text-text-muted">© 2024 HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</p></div><div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg"><div class="flex flex-wrap items-center gap-space-md font-label-lg text-label-lg"><a class="text-primary font-bold hover:underline" data-path="sustainability-policy" href="#">지속가능경영 방침</a><span class="text-surface-variant">|</span><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">개인정보 처리방침</a><span class="text-surface-variant">|</span><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="ethics-charter" href="#">윤리헌장</a><span class="text-surface-variant">|</span><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="contact-esg" href="#">문의 및 제안</a></div><div class="relative min-w-[200px]"><select class="w-full appearance-none bg-surface-card text-on-surface font-label-lg text-label-lg px-space-md py-space-sm pr-space-xl rounded-xl focus:outline-none"><option value="">Family Sites</option><option value="hyundai-global">Hyundai Worldwide</option><option value="hyundai-steel">현대제철</option><option value="hyundai-rotem">현대로템</option><option value="hyundai-glovis">현대글로비스</option><option value="hyundai-mobis">현대모비스</option></select><span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span></div></div></div><div class="pt-space-md text-right"><span class="font-label-badge text-label-badge text-text-muted uppercase tracking-wider">Progress for Humanity • ESG Transparency Platform</span></div></div></footer>
+<!-- JAVASCRIPT FOR INTERACTIVE MODULES -->
+<script>
+  // Tab Switcher
+  function switchEnvTab(tabId) {
+    const tabs = ['overview', 'powertrain', 'roadmap', 're100'];
+    tabs.forEach(id => {
+      const panel = document.getElementById('panel-' + id);
+      const btn = document.getElementById('tab-btn-' + id);
+      if (id === tabId) {
+        panel.classList.remove('hidden');
+        btn.setAttribute('aria-selected', 'true');
+        btn.className = 'env-tab-btn flex items-center gap-2 px-5 py-2.5 rounded-xl font-label-lg text-label-lg transition-all bg-primary text-on-primary shadow-sm font-bold';
+      } else {
+        panel.classList.add('hidden');
+        btn.setAttribute('aria-selected', 'false');
+        btn.className = 'env-tab-btn flex items-center gap-2 px-5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all font-medium';
+      }
+    });
+  }
+
+  // Powertrain Data & Interactive Details
+  const powertrainData = {
+    hev: {
+      name: '하이브리드 (HEV & PHEV)',
+      units: '679,017대',
+      badge: '선순환 캐시카우',
+      desc: '전기차 캐즘 현상을 슬기롭게 완충하는 실질적 수익 기반입니다. 높은 연비와 주행 편의성을 바탕으로 2030년까지 예정된 총 125조 원 미래 투자 재원을 공급합니다.',
+      models: '투싼 HEV · 싼타페 HEV · 팰리세이드 HEV · 코나 HEV'
+    },
+    ev: {
+      name: '순수전기차 (EV / BEV)',
+      units: '275,669대',
+      badge: '탄소감축 선봉축',
+      desc: '주행 중 배출가스를 완전히 제로화하는 2045 탄소중립의 절대적 핵심입니다. E-GMP 전용 플랫폼과 초고속 800V 충전 인프라를 바탕으로 글로벌 전동화 격차를 주도합니다.',
+      models: '아이오닉 5 · 아이오닉 6 · 코나 EV · 캐스퍼 일렉트릭 · 제네시스 GV60'
+    },
+    fcev: {
+      name: '수소전기차 & HTWO (FCEV)',
+      units: '7,126대',
+      badge: '글로벌 수소 리더십',
+      desc: '배터리 전동화의 한계를 극복하는 차세대 무공해 솔루션입니다. 엑시언트 대형트럭과 트램, 선박 및 고정형 발전기까지 아우르는 수소 에너지 밸류체인을 선제 완성합니다.',
+      models: '2세대 넥쏘(NEXO) · 엑시언트 수소대형트럭 · HTWO 연료전지 시스템'
+    }
+  };
+
+  function selectPowertrain(type) {
+    const data = powertrainData[type];
+    if (!data) return;
+
+    // Update texts
+    document.getElementById('pt-name').textContent = data.name;
+    document.getElementById('pt-units').textContent = data.units;
+    document.getElementById('pt-badge').textContent = data.badge;
+    document.getElementById('pt-desc').textContent = data.desc;
+    document.getElementById('pt-models').textContent = data.models;
+
+    // Update buttons
+    ['hev', 'ev', 'fcev'].forEach(t => {
+      const btn = document.getElementById('pt-btn-' + t);
+      if (t === type) {
+        btn.className = 'pt-toggle-btn px-3 py-2 rounded-xl text-xs font-bold text-center border transition-all bg-primary text-on-primary border-primary shadow-xs';
+      } else {
+        btn.className = 'pt-toggle-btn px-3 py-2 rounded-xl text-xs font-bold text-center border transition-all bg-surface-card text-on-surface-variant border-border-subtle hover:bg-surface-tint-blue';
+      }
+    });
+  }
+
+  // Roadmap Stages Data
+  const roadmapData = {
+    1: {
+      badge: 'STEP 01 핵심 현황',
+      title: '2025 마일스톤: 전동화 96만 대 돌파 및 해외 RE100 88% 조기 달성',
+      stat: '연간 198.6만 tCO₂-eq 감축',
+      scope12: '국내 444MW 초대형 PPA 계약 완결 및 북미 메타플랜트 147MW 청정 태양광 가동으로 연 28만 톤 직접 배출 감축.',
+      scope3: '아이오닉 라인업 및 고효율 하이브리드 보급으로 실 도로 주행 단계 온실가스 사회적 비용 6,954억 원 절감 실현.',
+      infra: '유럽·인도·북미 100% RE100 선제 확보, ZEF(Zero Energy Factory) 친환경 건축 기준 전 사업장 표준 적용.'
+    },
+    2: {
+      badge: 'STEP 02 핵심 타깃',
+      title: '2030 중기 목표: 연 330만 대 친환경차 판매 (전체 비중 60%) & 글로벌 RE100 완성',
+      stat: '제품 탄소배출량 35% 감축 (2019 대비)',
+      scope12: '글로벌 전 사업장 RE100 100% 조기 달성 추진 및 직접 배출 탄소 무배출 고효율 열원 대체.',
+      scope3: '2030년 전기차 200만 대 및 EREV 600마일 라인업 투입으로 공급망·주행 전 단계 35% 순감축.',
+      infra: 'HTWO 수소 물류망 및 초고속 이피트(E-pit) 충전 네트워크 북미·유럽·한국 완벽 확장 구축.'
+    },
+    3: {
+      badge: 'STEP 03 전면 전환',
+      title: '2040 글로벌 전환: 주요 선진 시장 100% 무공해차(ZEV) 전환 가속화',
+      stat: '주요 시장 내연기관 전면 단종',
+      scope12: '사업장 탄소배출 80% 이상 상쇄 및 공정 내 그린 수소 직접 연소 체계 구축.',
+      scope3: '유럽, 미국, 한국 등 주력 완성차 시장에서 순수 배터리(BEV) 및 수소전기차(FCEV)만 100% 판매.',
+      infra: '공급망 전 과정 1·2차 협력사 100% 재생에너지 전력 사용 인증 의무화.'
+    },
+    4: {
+      badge: 'STEP 04 궁극적 목표',
+      title: '2045 탄소중립(Net-Zero): 전 밸류체인 완전 무공해 탄소 순배출 제로',
+      stat: 'Net Positive 완전 정착',
+      scope12: '생산 제조 전 공정 100% 청정에너지 가동 및 잔여 배출 제로화 달성.',
+      scope3: '원자재 채굴부터 최종 차량 폐기·재활용에 이르는 전 생애주기 Scope 3 탄소중립 완결.',
+      infra: '그린 수소 생태계와 자원순환 플라스틱 100% 사이클을 통한 지구적 Net Positive 리더십 확립.'
+    }
+  };
+
+  function selectRoadmapStage(step) {
+    const data = roadmapData[step];
+    if (!data) return;
+
+    document.getElementById('rm-badge').textContent = data.badge;
+    document.getElementById('rm-title').textContent = data.title;
+    document.getElementById('rm-stat').textContent = data.stat;
+    document.getElementById('rm-scope12').textContent = data.scope12;
+    document.getElementById('rm-scope3').textContent = data.scope3;
+    document.getElementById('rm-infra').textContent = data.infra;
+
+    for (let i = 1; i <= 4; i++) {
+      const btn = document.getElementById('rm-step-' + i);
+      if (i === step) {
+        btn.className = 'rm-step-btn text-left p-space-md rounded-xl border-2 border-primary bg-surface-tint-blue transition-all cursor-pointer shadow-sm';
+      } else {
+        btn.className = 'rm-step-btn text-left p-space-md rounded-xl border border-border-subtle bg-surface-slate-bg hover:border-secondary transition-all cursor-pointer';
+      }
+    }
+  }
+</script>
+</body></html>
